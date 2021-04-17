@@ -15,10 +15,11 @@
 
 .content {
 	perspective: 700px;
+	perspective-origin: bottom left;
 }
 
 .photo {
-	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+	transition: transform 3s cubic-bezier(.55, -.62, .27, 1.2);
 	transform-style: preserve-3d;
 }
 
