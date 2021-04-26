@@ -4,7 +4,7 @@
 
 .nav {
     padding-left: 0;
-    flex-basis: 100%;
+    flex-basis: $full;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@
     border-radius: 5px;
     padding: $gutter 0;
     display: block;
-    width: 100%;
+    width: $full;
     transition: 
     background-color .2s ease-in-out, 
       color .2s ease-in-out;

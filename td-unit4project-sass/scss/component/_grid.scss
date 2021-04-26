@@ -14,7 +14,7 @@
   
 [class^=col] {
     margin-top: $gutter;
-    flex-basis: 100%;
+    flex-basis: $full;
     min-height: 25px;
     padding: $gutter;
     border-radius: 5px;
@@ -69,5 +69,5 @@
 }
   
 .card {
-    flex-basis: 100%;
+    flex-basis: $full;
 }
