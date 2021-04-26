@@ -421,29 +421,54 @@ a.link {
   border-radius: 5px;
 }
 
-/* line 15, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_button.scss */
-.default {
+/* line 21, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-default {
   background-color: #51ddfc;
 }
 
-/* line 19, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_button.scss */
-.error {
+/* line 23, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-default:hover {
+  background-color: #83e7fd;
+}
+
+/* line 21, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-error {
   background-color: #e4757a;
 }
 
-/* line 23, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_button.scss */
-.info {
+/* line 23, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-error:hover {
+  background-color: #eca0a3;
+}
+
+/* line 21, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-info {
   background-color: #927bc1;
 }
 
-/* line 27, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_button.scss */
-.success {
+/* line 23, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-info:hover {
+  background-color: #af9ed1;
+}
+
+/* line 21, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-success {
   background-color: #63cc82;
 }
 
-/* line 31, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_button.scss */
-.warning {
+/* line 23, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-success:hover {
+  background-color: #89d9a1;
+}
+
+/* line 21, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-warning {
   background-color: #fd7856;
+}
+
+/* line 23, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/utilities/_mixins.scss */
+.btn-warning:hover {
+  background-color: #fea088;
 }
 
 /* line 5, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_form.scss */

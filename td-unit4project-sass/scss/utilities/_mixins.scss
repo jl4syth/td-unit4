@@ -9,7 +9,20 @@
     margin-right: auto;
 }
 
+// Layout
 @mixin flex-col {
     display: flex;
     flex-direction: column;
 }
+
+// Button Colors
+@mixin buttons($map) {
+    @each $button, $color in $map {
+      &-#{$button} {
+        background-color: $color;
+        &:hover {
+            background-color: lighten($color, 10%);
+        }
+      }
+    } 
+  }
