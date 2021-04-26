@@ -7,8 +7,7 @@
 }
   
 .row {
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     padding: 1em $gutter;
 }
   

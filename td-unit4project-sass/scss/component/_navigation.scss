@@ -3,12 +3,11 @@
 //=======================
 
 .nav {
+    @include flex-col;
     padding-left: 0;
     flex-basis: $full;
-    display: flex;
-    flex-direction: column;
 }
-  
+
 .nav-link {
     text-align: center;
     border-radius: 5px;
@@ -23,4 +22,5 @@
         background-color: $primary-color;
     }
 }
+
   

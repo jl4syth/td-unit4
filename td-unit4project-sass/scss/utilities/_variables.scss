@@ -5,6 +5,7 @@
 // Colors
 $font-color: #777; //dark gray
 $primary-color: #58e1c1; //teal
+$primary-color-light: lighten($primary-color, 10%);
 $secondary-color: #51ddfc; //light blue
 $white-color: #fff; //white
 $accent-color: #ccc; //light gray
