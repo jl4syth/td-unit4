@@ -2,21 +2,17 @@
 // Images
 //========================
 
-.img-avatar {
-    @include image-center
-    margin-top: $gutter;
-    max-width: $full; 
+img {
+  @include image-center
+  margin-top: $gutter;
+  max-width: $full;
+  &.img-avatar {
     max-height: $full;
   }
-  
-.img-frame {
-    @include image-center;
-    margin-top: $gutter;
-    max-width: $full;
+  &.img-frame {
     padding: 13px;
     border: 1px solid $accent-color;
+  }
 }
+
   
-.img-logo {
-    @include image-center;
-}
