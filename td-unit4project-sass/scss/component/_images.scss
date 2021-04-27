@@ -3,7 +3,7 @@
 //========================
 
 img {
-  @include image-center
+  @include centered;
   margin-top: $gutter;
   max-width: $full;
   &.img-avatar {
@@ -14,5 +14,7 @@ img {
     border: 1px solid $accent-color;
   }
 }
+
+
 
   

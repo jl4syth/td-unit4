@@ -3,6 +3,7 @@
 //=======================
 
 .btn {
+    @include buttons($buttons);
     margin-top: 15px;
     width: $full;
     color: $white-color;
@@ -11,8 +12,3 @@
     text-transform: uppercase;
     border-radius: 5px;
   }
-  
-
-.btn {
-    @include buttons($buttons);
-}

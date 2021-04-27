@@ -373,41 +373,47 @@ template {
 
 /* line 5, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
 * {
+  box-sizing: border-box;
   color: #777;
   font-family: "Lato", sans-serif;
 }
 
-/* line 10, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
-h1 {
+/* line 11, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
+.headline-primary {
   color: #58e1c1;
+  margin-left: 10px;
 }
 
-/* line 14, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
+/* line 16, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
 p {
   line-height: 1.45em;
 }
 
-/* line 18, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
+/* line 20, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 20, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
+/* line 22, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
 a.link {
   color: #51ddfc;
   font-weight: 700;
 }
 
-/* line 26, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
 .headline-secondary {
   font-weight: 300;
 }
 
-/* line 30, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
+/* line 32, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/base/_typography.scss */
 .blockquote {
   font-size: 1.5em;
   font-weight: 300;
   font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid #58e1c1;
+  border-radius: 5px;
 }
 
 /* line 5, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_button.scss */
@@ -476,8 +482,8 @@ a.link {
   flex-basis: 100%;
 }
 
-/* line 9, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_form.scss */
-.input {
+/* line 7, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_form.scss */
+.form .input {
   display: block;
   width: 94%;
   margin: 10px auto 0;
@@ -486,100 +492,14 @@ a.link {
   border-bottom: 5px solid #58e1c1;
 }
 
-/* line 18, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_form.scss */
-.hidden {
+/* line 15, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_form.scss */
+.form .hidden {
   position: absolute;
   left: -10000px;
   top: auto;
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-/* line 5, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.container {
-  padding: 0 10px;
-}
-
-/* line 9, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.row {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 10px;
-}
-
-/* line 14, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-[class^=col] {
-  margin-top: 10px;
-  flex-basis: 100%;
-  min-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-/* line 22, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-1 {
-  background-color: #927bc1;
-}
-
-/* line 26, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-2 {
-  background-color: #fd7856;
-}
-
-/* line 30, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-3 {
-  background-color: #deb2ee;
-}
-
-/* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-4 {
-  background-color: #7ee6fd;
-}
-
-/* line 38, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-5 {
-  background-color: #88d9a0;
-}
-
-/* line 42, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-6 {
-  background-color: #4da2bb;
-}
-
-/* line 46, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-7 {
-  background-color: #ec9fa3;
-}
-
-/* line 50, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-8 {
-  background-color: #fd9f85;
-}
-
-/* line 54, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-9 {
-  background-color: #e4757a;
-}
-
-/* line 58, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-10 {
-  background-color: #63cc82;
-}
-
-/* line 62, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-11 {
-  background-color: #51ddfc;
-}
-
-/* line 66, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.theme.col-12 {
-  background-color: #80e8d1;
-}
-
-/* line 70, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
-.card {
-  flex-basis: 100%;
 }
 
 /* line 5, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_navigation.scss */
@@ -590,8 +510,8 @@ a.link {
   flex-basis: 100%;
 }
 
-/* line 11, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_navigation.scss */
-.nav-link {
+/* line 9, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_navigation.scss */
+.nav .nav-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
@@ -600,8 +520,8 @@ a.link {
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-/* line 20, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_navigation.scss */
-.nav-link:hover {
+/* line 18, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_navigation.scss */
+.nav .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
 }
@@ -624,6 +544,194 @@ img.img-avatar {
 img.img-frame {
   padding: 13px;
   border: 1px solid #ccc;
+}
+
+/* line 5, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.container {
+  padding: 0 10px;
+}
+
+/* line 10, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+}
+
+/* line 15, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* line 23, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.card {
+  flex-basis: 100%;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-1 {
+  background-color: #927bc1;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-2 {
+  background-color: #fd7856;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-3 {
+  background-color: #deb2ee;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-4 {
+  background-color: #7ee6fd;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-5 {
+  background-color: #88d9a0;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-6 {
+  background-color: #4da2bb;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-7 {
+  background-color: #ec9fa3;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-8 {
+  background-color: #fd9f85;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-9 {
+  background-color: #e4757a;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-10 {
+  background-color: #63cc82;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-11 {
+  background-color: #51ddfc;
+}
+
+/* line 28, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_grid.scss */
+.theme.col-12 {
+  background-color: #80e8d1;
+}
+
+@media (min-width: 768px) {
+  /* line 9, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+  }
+  /* line 14, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 18, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .row {
+    flex-direction: row;
+  }
+  /* line 22, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  /* line 29, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-1 {
+    flex-basis: 8.33%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-2 {
+    flex-basis: 16.67%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-3 {
+    flex-basis: 25%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-5 {
+    flex-basis: 41.67%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-6 {
+    flex-basis: 50%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-7 {
+    flex-basis: 58.33%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-8 {
+    flex-basis: 66.67%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-9 {
+    flex-basis: 75%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-10 {
+    flex-basis: 83.33%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-11 {
+    flex-basis: 91.67%;
+  }
+  /* line 34, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .col-12 {
+    flex-basis: 100%;
+  }
+  /* line 39, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* line 45, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .nav-link {
+    flex-basis: 100px;
+  }
+  /* line 49, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .btn {
+    padding: 10px 30px;
+  }
+  /* line 53, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  /* line 57, ../../../../treehouse-tech-degree/td-unit4/td-unit4project-sass/scss/component/_media-queries.scss */
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
